@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+    database:
+       container_name: postgres-nest-project-primer
+       image: postgres:latest
+       ports:
+         - "5433:5432"
+       volumes:
+         - C:\Users\kossy\data\postgres\csc2022:\data\postgres
+       env_file:
+         - nest-project-primer.env
